@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1000</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone4 Platform</string>
+		<key>sw</key>
+		<integer>640</integer>
+		<key>sh</key>
+		<integer>960</integer>
+	</dict>
+	<key>1001</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone4s Platform</string>
+		<key>sw</key>
+		<integer>640</integer>
+		<key>sh</key>
+		<integer>960</integer>
+	</dict>
+	<key>1002</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone5 Platform</string>
+		<key>sw</key>
+		<integer>640</integer>
+		<key>sh</key>
+		<integer>1136</integer>
+	</dict>
+	<key>1003</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone5s Platform</string>
+		<key>sw</key>
+		<integer>640</integer>
+		<key>sh</key>
+		<integer>1136</integer>
+	</dict>
+	<key>1004</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone6 Platform</string>
+		<key>sw</key>
+		<integer>750</integer>
+		<key>sh</key>
+		<integer>1334</integer>
+	</dict>
+	<key>1005</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone6 Plus Platform</string>
+		<key>sw</key>
+		<integer>1242</integer>
+		<key>sh</key>
+		<integer>2208</integer>
+	</dict>
+	<key>1006</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone7 Platform</string>
+		<key>sw</key>
+		<integer>750</integer>
+		<key>sh</key>
+		<integer>1334</integer>
+	</dict>
+	<key>1007</key>
+	<dict>
+		<key>platform</key>
+		<string>iPhone7s Platform</string>
+		<key>sw</key>
+		<integer>1242</integer>
+		<key>sh</key>
+		<integer>2208</integer>
+	</dict>
+	<key>1008</key>
+	<dict>
+		<key>platform</key>
+		<string>iPad Mini Platform</string>
+		<key>sw</key>
+		<real>1536</real>
+		<key>sh</key>
+		<integer>2048</integer>
+	</dict>
+	<key>1009</key>
+	<dict>
+		<key>platform</key>
+		<string>iPad Air Platform</string>
+		<key>sw</key>
+		<integer>1536</integer>
+		<key>sh</key>
+		<integer>2048</integer>
+	</dict>
+	<key>1010</key>
+	<dict>
+		<key>platform</key>
+		<string>iPad Pro Platform</string>
+		<key>sw</key>
+		<integer>2048</integer>
+		<key>sh</key>
+		<integer>2732</integer>
+	</dict>
+</dict>
+</plist>

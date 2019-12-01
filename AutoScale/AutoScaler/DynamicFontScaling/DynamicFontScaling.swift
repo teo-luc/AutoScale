@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: -
 
-enum Platform: Int {
+public enum Platform: Int {
     case unknownPlatform     = -1
     case iPhone4Platform     = 1000
     case iPhone4sPlatform    = 1001
@@ -54,7 +54,7 @@ protocol DynamicFontScalingLogic {
 
 // MARK: -
 
-final class DynamicFontScaling: DynamicFontScalingLogic {
+open class DynamicFontScaling: DynamicFontScalingLogic {
     var platform: Platform = .unknownPlatform
     
     var ratio: CGFloat = 0.0
@@ -62,6 +62,9 @@ final class DynamicFontScaling: DynamicFontScalingLogic {
     var pauseUpdateFontScaling: Bool = false
     
     var customFontSizeBundleFileName: String?
+    
+    public static let shared = DynamicFontScaling.init()
+    private init() {}
     
     func fontScaleByGreaterThanOrEqual(platform: Platform, with ratio: CGFloat) -> Self {
         let screenResolution = Screen.resolution(from: platform)
@@ -77,7 +80,7 @@ final class DynamicFontScaling: DynamicFontScalingLogic {
         return self
     }
     
-    func iPhoneFontScaleByGreaterThanOrEqual(platform: Platform) -> Self {
+    public func iPhoneFontScaleByGreaterThanOrEqual(platform: Platform) -> Self {
         let ratio = (Screen.deviceSW / Screen.BASE_IPHONE_SW) - 1.0
         return fontScaleByGreaterThanOrEqual(platform: platform, with: ratio)
     }
@@ -97,6 +100,6 @@ final class DynamicFontScaling: DynamicFontScalingLogic {
     
     // MARK: -
     private func swizzling() {
-        
+        UIView.beginSwizzling()
     }
 }

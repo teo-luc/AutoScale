@@ -49,7 +49,7 @@ struct Screen {
 extension Screen {
     static func resolution(from platform: Platform) -> CGSize {
         guard let dict = Plist.readPropertyList(from: "Platforms"),
-            let deviceInfos = dict["\(platform)"] as? NSDictionary,
+            let deviceInfos = dict["\(platform.rawValue)"] as? NSDictionary,
             let sw = deviceInfos[Screen.SW] as? NSNumber,
             let sh = deviceInfos[Screen.SH] as? NSNumber
             else { return CGSize.zero }

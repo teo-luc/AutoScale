@@ -20,6 +20,9 @@
 		266925D72393BDFE0097C223 /* DynamicFontScaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925D62393BDFE0097C223 /* DynamicFontScaling.swift */; };
 		266925DA2393C20C0097C223 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925D92393C20C0097C223 /* Screen.swift */; };
 		266925DC2393C5780097C223 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925DB2393C5780097C223 /* Plist.swift */; };
+		26D51D4323941107003186D2 /* UIView+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D51D4223941107003186D2 /* UIView+Swizzling.swift */; };
+		26D51D4523942954003186D2 /* Platforms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26D51D4423942954003186D2 /* Platforms.plist */; };
+		26D51D4623942990003186D2 /* Platforms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26D51D4423942954003186D2 /* Platforms.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,8 @@
 		266925D62393BDFE0097C223 /* DynamicFontScaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFontScaling.swift; sourceTree = "<group>"; };
 		266925D92393C20C0097C223 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		266925DB2393C5780097C223 /* Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		26D51D4223941107003186D2 /* UIView+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Swizzling.swift"; sourceTree = "<group>"; };
+		26D51D4423942954003186D2 /* Platforms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Platforms.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,8 @@
 		266925C62393BACA0097C223 /* AutoScaler */ = {
 			isa = PBXGroup;
 			children = (
+				26D51D4423942954003186D2 /* Platforms.plist */,
+				26D51D41239410F5003186D2 /* UIKit */,
 				266925D52393BD510097C223 /* DynamicFontScaling */,
 				266925D42393BD2F0097C223 /* Util */,
 				266925C72393BACA0097C223 /* AutoScaler.h */,
@@ -142,6 +149,14 @@
 				266925D62393BDFE0097C223 /* DynamicFontScaling.swift */,
 			);
 			path = DynamicFontScaling;
+			sourceTree = "<group>";
+		};
+		26D51D41239410F5003186D2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				26D51D4223941107003186D2 /* UIView+Swizzling.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				266925B82393AC5D0097C223 /* LaunchScreen.storyboard in Resources */,
+				26D51D4623942990003186D2 /* Platforms.plist in Resources */,
 				266925B52393AC5D0097C223 /* Assets.xcassets in Resources */,
 				266925B32393AC5C0097C223 /* Main.storyboard in Resources */,
 			);
@@ -248,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D51D4523942954003186D2 /* Platforms.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				266925D72393BDFE0097C223 /* DynamicFontScaling.swift in Sources */,
+				26D51D4323941107003186D2 /* UIView+Swizzling.swift in Sources */,
 				266925D32393BAD80097C223 /* SwizzleConfiguration.swift in Sources */,
 				266925DC2393C5780097C223 /* Plist.swift in Sources */,
 				266925DA2393C20C0097C223 /* Screen.swift in Sources */,

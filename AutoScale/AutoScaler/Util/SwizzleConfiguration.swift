@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SwizzleConfiguration {
-    static let swizzling: (AnyClass, Selector, Selector) -> () = { forClass, originalSelector, swizzledSelector in
+    static func swizzling(_ forClass: AnyClass, _ originalSelector: Selector, _ swizzledSelector: Selector) {
         guard
             let originalMethod = class_getInstanceMethod(forClass, originalSelector),
             let swizzledMethod = class_getInstanceMethod(forClass, swizzledSelector)
