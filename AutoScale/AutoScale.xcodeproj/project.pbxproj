@@ -13,7 +13,38 @@
 		266925B32393AC5C0097C223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266925B12393AC5C0097C223 /* Main.storyboard */; };
 		266925B52393AC5D0097C223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266925B42393AC5D0097C223 /* Assets.xcassets */; };
 		266925B82393AC5D0097C223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266925B62393AC5D0097C223 /* LaunchScreen.storyboard */; };
+		266925C92393BACA0097C223 /* AutoScaler.h in Headers */ = {isa = PBXBuildFile; fileRef = 266925C72393BACA0097C223 /* AutoScaler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		266925CC2393BACA0097C223 /* AutoScaler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266925C52393BACA0097C223 /* AutoScaler.framework */; };
+		266925CD2393BACA0097C223 /* AutoScaler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 266925C52393BACA0097C223 /* AutoScaler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		266925D32393BAD80097C223 /* SwizzleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925D22393BAD80097C223 /* SwizzleConfiguration.swift */; };
+		266925D72393BDFE0097C223 /* DynamicFontScaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925D62393BDFE0097C223 /* DynamicFontScaling.swift */; };
+		266925DA2393C20C0097C223 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925D92393C20C0097C223 /* Screen.swift */; };
+		266925DC2393C5780097C223 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266925DB2393C5780097C223 /* Plist.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		266925CA2393BACA0097C223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 266925A02393AC5C0097C223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266925C42393BACA0097C223;
+			remoteInfo = AutoScaler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		266925D12393BACA0097C223 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				266925CD2393BACA0097C223 /* AutoScaler.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		266925A82393AC5C0097C223 /* AutoScale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScale.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +55,25 @@
 		266925B42393AC5D0097C223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266925B72393AC5D0097C223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		266925B92393AC5D0097C223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266925C52393BACA0097C223 /* AutoScaler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoScaler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		266925C72393BACA0097C223 /* AutoScaler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoScaler.h; sourceTree = "<group>"; };
+		266925C82393BACA0097C223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266925D22393BAD80097C223 /* SwizzleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleConfiguration.swift; sourceTree = "<group>"; };
+		266925D62393BDFE0097C223 /* DynamicFontScaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFontScaling.swift; sourceTree = "<group>"; };
+		266925D92393C20C0097C223 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		266925DB2393C5780097C223 /* Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		266925A52393AC5C0097C223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266925CC2393BACA0097C223 /* AutoScaler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266925C22393BACA0097C223 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				266925AA2393AC5C0097C223 /* AutoScale */,
+				266925C62393BACA0097C223 /* AutoScaler */,
 				266925A92393AC5C0097C223 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				266925A82393AC5C0097C223 /* AutoScale.app */,
+				266925C52393BACA0097C223 /* AutoScaler.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +115,47 @@
 			path = AutoScale;
 			sourceTree = "<group>";
 		};
+		266925C62393BACA0097C223 /* AutoScaler */ = {
+			isa = PBXGroup;
+			children = (
+				266925D52393BD510097C223 /* DynamicFontScaling */,
+				266925D42393BD2F0097C223 /* Util */,
+				266925C72393BACA0097C223 /* AutoScaler.h */,
+				266925C82393BACA0097C223 /* Info.plist */,
+			);
+			path = AutoScaler;
+			sourceTree = "<group>";
+		};
+		266925D42393BD2F0097C223 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				266925D22393BAD80097C223 /* SwizzleConfiguration.swift */,
+				266925D92393C20C0097C223 /* Screen.swift */,
+				266925DB2393C5780097C223 /* Plist.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		266925D52393BD510097C223 /* DynamicFontScaling */ = {
+			isa = PBXGroup;
+			children = (
+				266925D62393BDFE0097C223 /* DynamicFontScaling.swift */,
+			);
+			path = DynamicFontScaling;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		266925C02393BACA0097C223 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266925C92393BACA0097C223 /* AutoScaler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		266925A72393AC5C0097C223 /* AutoScale */ = {
@@ -77,15 +165,35 @@
 				266925A42393AC5C0097C223 /* Sources */,
 				266925A52393AC5C0097C223 /* Frameworks */,
 				266925A62393AC5C0097C223 /* Resources */,
+				266925D12393BACA0097C223 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				266925CB2393BACA0097C223 /* PBXTargetDependency */,
 			);
 			name = AutoScale;
 			productName = AutoScale;
 			productReference = 266925A82393AC5C0097C223 /* AutoScale.app */;
 			productType = "com.apple.product-type.application";
+		};
+		266925C42393BACA0097C223 /* AutoScaler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266925CE2393BACA0097C223 /* Build configuration list for PBXNativeTarget "AutoScaler" */;
+			buildPhases = (
+				266925C02393BACA0097C223 /* Headers */,
+				266925C12393BACA0097C223 /* Sources */,
+				266925C22393BACA0097C223 /* Frameworks */,
+				266925C32393BACA0097C223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoScaler;
+			productName = AutoScaler;
+			productReference = 266925C52393BACA0097C223 /* AutoScaler.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +207,10 @@
 				TargetAttributes = {
 					266925A72393AC5C0097C223 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					266925C42393BACA0097C223 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -116,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				266925A72393AC5C0097C223 /* AutoScale */,
+				266925C42393BACA0097C223 /* AutoScaler */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +241,13 @@
 				266925B82393AC5D0097C223 /* LaunchScreen.storyboard in Resources */,
 				266925B52393AC5D0097C223 /* Assets.xcassets in Resources */,
 				266925B32393AC5C0097C223 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266925C32393BACA0097C223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +264,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		266925C12393BACA0097C223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266925D72393BDFE0097C223 /* DynamicFontScaling.swift in Sources */,
+				266925D32393BAD80097C223 /* SwizzleConfiguration.swift in Sources */,
+				266925DC2393C5780097C223 /* Plist.swift in Sources */,
+				266925DA2393C20C0097C223 /* Screen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		266925CB2393BACA0097C223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 266925C42393BACA0097C223 /* AutoScaler */;
+			targetProxy = 266925CA2393BACA0097C223 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		266925B12393AC5C0097C223 /* Main.storyboard */ = {
@@ -283,6 +422,7 @@
 		266925BD2393AC5D0097C223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AutoScale/Info.plist;
@@ -300,6 +440,7 @@
 		266925BE2393AC5D0097C223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AutoScale/Info.plist;
@@ -311,6 +452,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		266925CF2393BACA0097C223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AutoScaler/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoscale.framework.AutoScaler;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		266925D02393BACA0097C223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AutoScaler/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoscale.framework.AutoScaler;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +531,15 @@
 			buildConfigurations = (
 				266925BD2393AC5D0097C223 /* Debug */,
 				266925BE2393AC5D0097C223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266925CE2393BACA0097C223 /* Build configuration list for PBXNativeTarget "AutoScaler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266925CF2393BACA0097C223 /* Debug */,
+				266925D02393BACA0097C223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
