@@ -1,4 +1,4 @@
 # AutoScale
-Auto scale font-size, constrains on iOS devices
+Auto scale font-size, constraints on iOS devices
 
 # In development....
